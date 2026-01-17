@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Search } from "lucide-react";
-import { Spinner } from "./Spinner";
+import { Spinner } from "@/components/ui/spinner";
 
 interface SearchButtonProps {
   loading?: boolean;

@@ -1,10 +1,10 @@
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cn } from "@/lib/utils";
-import { Spinner } from "./Spinner";
+import { Spinner } from "@/components/ui/spinner";
 import { DownloadIcon } from "lucide-react";
 import type { VariantProps } from "class-variance-authority";
-import { buttonVariants } from "./buttonVariants";
+import { buttonVariants } from "@/components/ui/buttonVariants";
 
 interface DownloadButtonProps
   extends React.ComponentProps<"button">,

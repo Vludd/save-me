@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import { Input } from "./Input";
-import { SearchButton } from "./SearchButton";
+import { Input } from "@/components/ui/input";
+import { SearchButton } from "@/components/ui/SearchButton";
 
 interface Props {
   onSubmit: (url: string) => void;
