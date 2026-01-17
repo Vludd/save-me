@@ -2,6 +2,9 @@
 
 **save.me** — is a service that allows you to analyze a link from YouTube, TikTok, etc. The analysis will show in which formats you can download media content. The service is designed for local implementation.
 
+<img width="1280" height="723" alt="save me-frontend-view" src="https://github.com/user-attachments/assets/03a2a05c-3b90-4684-aa7d-5b4cbffd5d67" />
+
+
 ---
 
 ## Basic features
