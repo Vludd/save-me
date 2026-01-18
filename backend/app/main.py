@@ -1,4 +1,4 @@
-from fastapi import FastAPI, APIRouter
+from fastapi import FastAPI
 from fastapi.responses import RedirectResponse
 
 from app.routes import router
@@ -9,4 +9,4 @@ app = FastAPI()
 def root():
     return RedirectResponse("/docs", status_code=302)
 
-app.include_router(router, prefix="/api")
+app.include_router(router, prefix="/api/v1")

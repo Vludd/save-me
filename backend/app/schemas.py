@@ -5,3 +5,7 @@ class BaseConfig(BaseModel):
     
 class SInfoRequest(BaseConfig):
     url: str = Field(..., examples=["https://example.com"])
+    
+class DownloadRequest(BaseConfig):
+    url: str
+    format_id: str

@@ -3,12 +3,14 @@ import { DownloadListUI } from "../components/ui/DownloadListUI";
 import type { FormatItemModel } from "../core/models";
 
 interface Props {
+  title?: string;
   formats: FormatItemModel[];
   lastUrl: string;
+  thumbnailUrl?: string;
   fetchingInfo: boolean;
 }
 
-export function DownloadList({ formats, lastUrl, fetchingInfo }: Props) {
+export function DownloadList({ title, formats, lastUrl, thumbnailUrl, fetchingInfo }: Props) {
   const { sortedGroups, startDownload, isDownloading, getProgress } =
     useDownloadList(formats, lastUrl, fetchingInfo);
 
@@ -18,6 +20,8 @@ export function DownloadList({ formats, lastUrl, fetchingInfo }: Props) {
       startDownload={startDownload}
       isDownloading={isDownloading}
       getProgress={getProgress}
+      title={title}
+      thumbnailUrl={thumbnailUrl}
       fetchingInfo={fetchingInfo}
     />
   );
